@@ -10,22 +10,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <script>
+      document.documentElement.className = "js";
+    </script>
     <title>Dom Manipulation</title>
   </head>
 
   <body>
-    <nav class="menu">
+    <nav class="menu js-menu">
       <ul>
-        <li><a href="#">animais</a></li>
-        <li><a href="#">faq</a></li>
-        <li><a href="#">contato</a></li>
-        <li><a href="#">dev →</a></li>
+        <li><a href="#animais">animais</a></li>
+        <li><a href="#faq">faq</a></li>
+        <li><a href="#contato">contato</a></li>
+        <li><a href="#dev">dev →</a></li>
       </ul>
     </nav>
 
-    <section class="grid-section animais" id="animais">
+    <section class="grid-section animais js-scroll" id="animais">
       <h1 class="titulo">Animais fantasticos</h1>
-      <ul class="animais-lista">
+      <ul class="animais-lista js-tabMenu">
         <li><img src="../img/imagem1.jpg" /></li>
         <li><img src="../img/imagem2.jpg" /></li>
         <li><img src="../img/imagem3.jpg" /></li>
@@ -33,8 +36,8 @@
         <li><img src="../img/imagem5.jpg" /></li>
         <li><img src="../img/imagem6.jpg" /></li>
       </ul>
-      <div class="animais-descricao">
-        <section>
+      <div class="animais-descricao js-tabContent">
+        <section class="ativo">
           <h2>Raposa</h2>
           <p>
             As raposas são animais mamíferos e onívoros pertencentes à família
@@ -139,9 +142,9 @@
       </div>
     </section>
 
-    <section class="grid-section faq" id="faq">
+    <section class="grid-section faq js-scroll" id="faq">
       <h1 class="titulo">FAQ</h1>
-      <dl class="faq-lista">
+      <dl class="faq-lista js-accordion">
         <dt>Qual a idade dos animais?</dt>
         <dd>
           As raposas são animais mamíferos e onívoros pertencentes à família
@@ -167,7 +170,7 @@
       </dl>
     </section>
 
-    <section class="grid-section contato" id="contato">
+    <section class="grid-section contato js-scroll" id="contato">
       <h1 class="titulo">Contato</h1>
       <div class="mapa">
         <img src="../img/mapa.png" />
