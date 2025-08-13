@@ -10,12 +10,13 @@ import initFuncionamento from "./dataFuncionamento.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
+const accordion = new Accordion('[data-anime="accordion"] dt');
+accordion.init();
 
 initModal();
 initMenuMobile();
 initDropDown();
 initTabNav();
-Accordion();
 animationInitScroll();
 initTooltip();
 initFuncionamento();
